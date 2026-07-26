@@ -1,0 +1,11 @@
+/vendor/
+/.env
+/composer.lock
+/storage/framework/logs/*
+!/storage/framework/logs/.gitkeep
+/storage/framework/temp/cache/*
+!/storage/framework/temp/cache/.gitkeep
+/app/Proxies/*
+!/app/Proxies/.gitkeep
+.idea/
+.vscode/
