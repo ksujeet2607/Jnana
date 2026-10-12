@@ -27,6 +27,9 @@ class Bootstrap
     {
         $appDir = dirname(__DIR__);
 
+        // Resolve the application root once; framework code must not infer it from __DIR__ or getcwd().
+        $paths = new \Core\ApplicationPaths($appDir);
+
         // Step 1: Initialize Tracy in safe fallback mode
         self::initializeDebugger($appDir, fallback: true);
 
@@ -38,7 +41,7 @@ class Bootstrap
 
         // Step 4: Logger & container
         $logger = self::initializeLogger($appDir);
-        $container = ContainerFactory::create(new ConfigManager(), $logger);
+        $container = ContainerFactory::create(new ConfigManager($paths->applicationRoot()), $logger);
 
         return $container;
     }
