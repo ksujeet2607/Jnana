@@ -32,7 +32,7 @@ The skeleton's `config/Dependencies.php` returns a structure with `bindings` and
 <?php
 
 use App\Services\Core\AppContext;
-use Library\Contracts\AppContextInterface;
+use Jnana\Contracts\AppContextInterface;
 
 return [
     'bindings' => [

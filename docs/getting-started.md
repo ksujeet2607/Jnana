@@ -70,9 +70,9 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use Library\Routes\Get;
+use Jnana\Routes\Get;
 
-final class HelloController extends BaseController
+final class HelloController extends Foundation
 {
     #[Get('/hello')]
     public function index()

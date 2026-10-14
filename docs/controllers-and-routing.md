@@ -11,12 +11,12 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-use Library\Routes\Get;
-use Library\Routes\Post;
-use Library\Routes\RouteGroup;
+use Jnana\Routes\Get;
+use Jnana\Routes\Post;
+use Jnana\Routes\RouteGroup;
 
 #[RouteGroup(prefix: '/catalog')]
-final class CatalogController extends BaseController
+final class CatalogController extends Foundation
 {
     #[Get('/')]
     public function index()

@@ -1,7 +1,7 @@
 <?php
 
 use App\Services\Core\AppContext;
-use Library\Contracts\AppContextInterface;
+use Jnana\Contracts\AppContextInterface;
 
 return [
     'bindings' => [

@@ -3,7 +3,7 @@
 namespace App\Entities\Support;
 
 use Doctrine\ORM\Mapping as ORM;
-use Library\Contracts\Authenticatable;
+use Jnana\Contracts\Authenticatable;
 
 #[ORM\Entity]
 #[ORM\Table(name: 'users')]

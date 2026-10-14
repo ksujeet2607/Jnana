@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Library\Routes\Get;
+use Jnana\Routes\Get;
 
 final class WelcomeController extends BaseController
 {

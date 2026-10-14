@@ -3,7 +3,7 @@
 namespace App\Security;
 
 use App\Enums\AppAccessEnum;
-use Library\Security\AuthManager as FrameworkAuthManager;
+use Jnana\Security\AuthManager as FrameworkAuthManager;
 
 /**
  * App-specific convenience wrapper around the framework's AuthManager.

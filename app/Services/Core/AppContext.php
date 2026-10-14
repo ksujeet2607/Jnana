@@ -4,9 +4,9 @@ namespace App\Services\Core;
 
 use App\Entities\Support\User;
 use Doctrine\ORM\EntityManagerInterface;
-use Library\Contracts\AppContextInterface;
-use Library\Contracts\Authenticatable;
-use Library\Security\AuthManager;
+use Jnana\Contracts\AppContextInterface;
+use Jnana\Contracts\Authenticatable;
+use Jnana\Security\AuthManager;
 
 class AppContext implements AppContextInterface
 {
