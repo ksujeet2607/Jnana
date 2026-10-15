@@ -34,8 +34,8 @@ $config = [
      * and its own middlewares.
      */
     'pre_controller_middlewares' => [
-        \Library\Middleware\MaintenanceMiddleware::class,
-        \Library\Middleware\CsrfMiddleware::class,
+        \Jnana\Middleware\MaintenanceMiddleware::class,
+        \Jnana\Middleware\CsrfMiddleware::class,
     ],
 
     /**
@@ -43,7 +43,7 @@ $config = [
      * These middlewares will be executed just after calling controller method.
      */
     'post_controller_middlewares' => [
-        \Library\Middleware\ClearOldInputMiddleware::class,
+        \Jnana\Middleware\ClearOldInputMiddleware::class,
     ],
 
     /**
