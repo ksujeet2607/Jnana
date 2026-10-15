@@ -34,6 +34,7 @@ $config = [
      * and its own middlewares.
      */
     'pre_controller_middlewares' => [
+        \Jnana\Middleware\SecurityHeadersMiddleware::class,
         \Jnana\Middleware\MaintenanceMiddleware::class,
         \Jnana\Middleware\CsrfMiddleware::class,
     ],
